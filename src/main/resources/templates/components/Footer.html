@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer class="pt-6 bg-gray-900 text-gray-400" th:fragment="footer">
+    <div class="container mx-auto px-6 mb-6 grid md:grid-cols-1 lg:grid-cols-4 gap-8">
+
+        <!-- Marca -->
+        <div class="space-y-4">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-3xl flex items-center justify-center">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-white"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+                <a href="/" class="text-lg font-bold text-white">lEoDomoTics</a>
+            </div>
+            <p class="text-sm md:text-base">Renovando y Transformando tu hogar con las nuevas tecnologias</p>
+
+            <!-- Redes Sociales -->
+            <div>
+                <ul class="flex gap-3">
+                    <!-- Facebook -->
+                    <li>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-sky-500 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-sky-500 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Twitter -->
+                    <li>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-sky-500 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Secciones -->
+        <div class="space-y-4 ml-6">
+            <h3 class="font-semibold text-lg text-white mb-3">Secciones</h3>
+            <ul class="space-y-2">
+                <li><a href="/" class="text-sm md:text-base hover:text-sky-600 transition-colors duration-300">Inicio</a></li>
+                <li><a href="/" class="text-sm md:text-base hover:text-sky-600 transition-colors duration-300">Nosotros</a></li>
+                <li><a href="/" class="text-sm md:text-base hover:text-sky-600 transition-colors duration-300">Productos</a></li>
+                <li><a href="/" class="text-sm md:text-base hover:text-sky-600 transition-colors duration-300">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="space-y-4">
+            <h3 class="font-semibold text-lg text-white">Contacto</h3>
+            <ul class="text-sm md:text-base space-y-3">
+                <li class="flex gap-3">
+                    <!-- MapPin -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Jirón de la Unión<span class="block">1081 Lima, Perú</span></span>
+                </li>
+                <li class="flex gap-3 pb-2">
+                    <!-- Phone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500">
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+                    </svg>
+                    +51 997 676 432
+                </li>
+                <li class="flex gap-3">
+                    <!-- Mail -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    </svg>
+                    contacto@hogardomotico.com
+                </li>
+            </ul>
+        </div>
+
+        <!-- Legales -->
+        <div class="space-y-4">
+            <h3 class="font-semibold text-lg text-white">Legales</h3>
+            <ul class="space-y-2">
+                <li><a href="/" class="hover:text-sky-600 transition-colors duration-300">Politicas de Cookies</a></li>
+                <li><a href="/" class="hover:text-sky-600 transition-colors duration-300">Politicas de Privacidad</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 text-center text-sm text-white py-6 px-4">
+        © 2026 IeDomoTics. Todos los derechos reservados.
+    </div>
+</footer>
+
+
+</body>
+</html>

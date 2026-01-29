@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" th:fragment="layout">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DomoticShop</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <div th:replace="~{components/NavMenu :: header}"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow ">
+        <div th:replace="~{::content}"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <div th:replace="~{components/Footer :: footer}"></div>
+    
+</body>
+</html>
