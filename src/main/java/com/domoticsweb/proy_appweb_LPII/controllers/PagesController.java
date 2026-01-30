@@ -11,4 +11,10 @@ public class PagesController {
 		return "pages/home";
 	}
 	
+	
+	@GetMapping("/nosotros")
+	public String about() {
+		return "pages/nosotros";
+	}
+	
 }
