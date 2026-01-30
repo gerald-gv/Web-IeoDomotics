@@ -17,4 +17,9 @@ public class PagesController {
 		return "pages/nosotros";
 	}
 	
+	@GetMapping("/contacto")
+	public String contact() {
+		return "pages/contacto";
+	}
+	
 }
